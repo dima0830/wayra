@@ -21,29 +21,29 @@
     </nav>
     <div class="box-banner text-center">
         <div class="container">
-           <iframe src="https://www.youtube.com/embed/QrjEUHzSkRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-       </div>
-   </div>
-   <div id="cont">
-      <div class="parallx1">
-        <h2 class="titulo text-center">Lorem ipsum dolor sit amet</h2>
-    </div><!-- fin parallx1-->
+         <iframe src="https://www.youtube.com/embed/QrjEUHzSkRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+ </div>
+ <div id="cont">
+  <div class="parallx1">
+    <h2 class="titulo text-center">Lorem ipsum dolor sit amet</h2>
+</div><!-- fin parallx1-->
 </div>
 <div class="box-body">
-   <div class="container">
-       <form>
-          <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Celular</label>
-            <input type="email" class="form-control">
-        </div>
+ <div class="container">
+     <form>
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Correo</label>
+        <input type="email" class="form-control">
+    </div>
+    <div class="form-group">
+        <label>Celular</label>
+        <input type="email" class="form-control">
+    </div>
         <!--<div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Re</label>
@@ -52,20 +52,28 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
+    <div class="masinfo">
+        <p>Si desea mayor Información no dude en contactarnos:</p>
+        <ul>
+            <li><span>Irma Arrázola</span> Cel: 3153343560</li>
+            <li><span>Andrés Pizano</span> Cel: 3153338563</li>
+        </ul>
+    </div>
 </div>
 </div>
+
 <div class="foot">
-   <div class="container-fluid" style="margin: 0; padding: 0;">
+ <div class="container-fluid" style="margin: 0; padding: 0;">
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-1 col-4">
-            <img src="img/icon.png" class="img-fluid">
+            <img src="img/icon.png" class="img-fluid icon">
         </div>
         <div class="col-sm-8" style="margin: 0; padding: 0;">
             <div class="box-foot">
-            <p>un proyecto de:</p>
-            <hr>
-            <img src="img/logo-foot.png">
+                <p>un proyecto de:</p>
+                <hr>
+                <img src="img/logo-foot.png">
             </div>
         </div>
         <div class="col-3"></div>
@@ -102,6 +110,14 @@
     }
     form input{
         border-radius: 0px !important;
+    }
+    ul{
+        border-left: 2px solid #aec720;
+        list-style: none;
+        display: inline-block;
+    }
+    ul li span{
+        color: #ca5516;
     }
     .logo{
         margin: 10px 0;
@@ -165,14 +181,29 @@
     background-color: #aec720;
     border-color: #aec720;
 }
+.masinfo {
+    width: 70%;
+    margin: 20px auto;
+    text-align: right;
+    padding: 10px;
+}
+.masinfo p{
+   font-weight: 700;
+   color: #683b11;
+}
 @media (max-width: 767px) {
-     form{
-        width: 100%;
-        padding: 25px;
-    }
-    .box-foot{
-        width: 80%;
-        margin: 20px auto;
+   form{
+    width: 100%;
+    padding: 25px;
+}
+.box-foot{
+    width: 80%;
+    margin: 20px auto;
+}
+}
+@media (min-width: 1600px){
+    .icon{
+        max-width: 90px;
     }
 }
 </style>
