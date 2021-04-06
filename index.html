@@ -58,14 +58,17 @@
    <div class="container-fluid" style="margin: 0; padding: 0;">
     <div class="row">
         <div class="col-sm-3"></div>
-        <div class="col-sm-1">
+        <div class="col-sm-1 col-4">
             <img src="img/icon.png" class="img-fluid">
         </div>
         <div class="col-sm-8" style="margin: 0; padding: 0;">
+            <div class="box-foot">
             <p>un proyecto de:</p>
             <hr>
             <img src="img/logo-foot.png">
+            </div>
         </div>
+        <div class="col-3"></div>
     </div>
 </div>
 </div>
@@ -161,6 +164,16 @@
     color: #fff;
     background-color: #aec720;
     border-color: #aec720;
+}
+@media (max-width: 767px) {
+     form{
+        width: 100%;
+        padding: 25px;
+    }
+    .box-foot{
+        width: 80%;
+        margin: 20px auto;
+    }
 }
 </style>
 
